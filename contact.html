@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title> Contact Me </title>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["ffirstname"].value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+}
+    
+function validateForm() {
+  var x = document.forms["myForm"]["flastname"].value;
+  if (x == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+}    
+function validateForm() {
+  var x = document.forms["myForm"]["femail"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body> 
+<div class="center">
+    
+ <div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="qualifications.html">Qualifications & Employment History</a>
+  <a class="active" href="#contact">Contact me</a>
+  <a href="about.html">About</a>
+ </div>
+    
+<h1> Want to get in contact with me?</h1>    
+   
+    <p>Please leave your name, email and a small bit of information on what you would like to discuss and I will get back to you as soon as possible. </p>
+    </div>
+    
+    <fieldset>
+        <legend>Personal Details:</legend>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <p>First Name: <input type="text" name="ffirstname"></p>
+   <p> Last Name: <input type="text" name="flastname"></p>
+  Email: <input type="text" name="femail"><br>
+    
+    
+<label for-"comment">  </label><br>
+<textarea name="comments" rows="5" cols="50">    
+</textarea>
+</fieldset>
+    
+ <p><input type="submit" value="Submit"> 
+     
+     
+    <img src="img/contactme.jpg" alt="picture of me" width="400" height="400" style="max-width:100%;height:auto;">   
+     
+     
+</form>
+   
+</body>
+</html> 
